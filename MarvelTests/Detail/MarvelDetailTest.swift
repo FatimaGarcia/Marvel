@@ -82,9 +82,4 @@ class MarvelDetailTest: XCTestCase {
         let sections = moreInfoView?.stackView.arrangedSubviews.filter{ $0 is RelatedMaterialView }
         XCTAssertEqual(sections?.count ?? 0, 2)
     }
-    
-    func testLoadingView() {
-        let vc = MarvelDetailViewController.instantiate()
-        
-    }
 }
