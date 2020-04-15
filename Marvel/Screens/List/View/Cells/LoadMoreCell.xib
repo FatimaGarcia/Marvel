@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="16096" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16086"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="LoadMoreCell" id="KGk-i7-Jjw" customClass="LoadMoreCell" customModule="Marvel" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8sq-US-PCF">
+                        <rect key="frame" x="117.5" y="7" width="85" height="30"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="30" id="D9K-Ey-WJA"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="17"/>
+                        <color key="tintColor" red="0.54901960780000003" green="0.12549019610000001" blue="0.12549019610000001" alpha="1" colorSpace="calibratedRGB"/>
+                        <state key="normal" title="Ver mas" image="memories" catalog="system">
+                            <color key="titleColor" red="0.54901960780000003" green="0.12549019610000001" blue="0.12549019610000001" alpha="1" colorSpace="calibratedRGB"/>
+                        </state>
+                        <connections>
+                            <action selector="didTapLoadMore:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="jTL-5J-aC1"/>
+                        </connections>
+                    </button>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="8sq-US-PCF" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="6fs-Dn-PS8"/>
+                    <constraint firstItem="8sq-US-PCF" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="7" id="HId-Qf-vcz"/>
+                    <constraint firstAttribute="bottom" secondItem="8sq-US-PCF" secondAttribute="bottom" constant="7" id="Wds-Km-Asn"/>
+                    <constraint firstItem="8sq-US-PCF" firstAttribute="centerX" secondItem="H2p-sc-9uM" secondAttribute="centerX" id="b1j-Kg-a7Z"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <point key="canvasLocation" x="139" y="153"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="memories" catalog="system" width="128" height="107"/>
+    </resources>
+</document>

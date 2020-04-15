@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="16096" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16086"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="MoreInfoView" customModule="Marvel" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="333"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="V3Z-5H-yJG">
+                    <rect key="frame" x="0.0" y="16" width="414" height="20.5"/>
+                    <fontDescription key="fontDescription" name="Copperplate" family="Copperplate" pointSize="20"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <stackView opaque="NO" contentMode="scaleToFill" placeholderIntrinsicWidth="infinite" placeholderIntrinsicHeight="250" axis="vertical" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="e4d-jU-zMi">
+                    <rect key="frame" x="0.0" y="44.5" width="414" height="288.5"/>
+                </stackView>
+            </subviews>
+            <color key="backgroundColor" red="0.81960784310000001" green="0.85490196080000003" blue="0.90980392160000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="e4d-jU-zMi" firstAttribute="trailing" secondItem="vUN-kp-3ea" secondAttribute="trailing" id="382-z6-Pst"/>
+                <constraint firstItem="V3Z-5H-yJG" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="16" id="8IT-YA-APQ"/>
+                <constraint firstItem="e4d-jU-zMi" firstAttribute="top" secondItem="V3Z-5H-yJG" secondAttribute="bottom" constant="8" id="C08-Fj-xAq"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="V3Z-5H-yJG" secondAttribute="trailing" id="Krv-iF-8q0"/>
+                <constraint firstItem="e4d-jU-zMi" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" id="bND-Of-QTd"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="bottom" secondItem="e4d-jU-zMi" secondAttribute="bottom" id="fNh-2i-2ot"/>
+                <constraint firstItem="V3Z-5H-yJG" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" id="w7S-hb-dNX"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <connections>
+                <outlet property="stackView" destination="e4d-jU-zMi" id="M0q-t8-qfD"/>
+                <outlet property="titleLabel" destination="V3Z-5H-yJG" id="uQi-ch-dpG"/>
+            </connections>
+            <point key="canvasLocation" x="137.68115942028987" y="-35.825892857142854"/>
+        </view>
+    </objects>
+</document>
