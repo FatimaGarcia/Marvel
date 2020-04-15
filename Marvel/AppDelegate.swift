@@ -22,10 +22,10 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         let listVC = assembler.provideList()
         navigationController = UINavigationController(rootViewController: listVC)
         UINavigationBar.appearance().barTintColor = UIColor.marvelRed
-        UINavigationBar.appearance().tintColor = UIColor.marvelGrey
+        UINavigationBar.appearance().tintColor = UIColor.marvelGray
         UINavigationBar.appearance().titleTextAttributes = [
             NSAttributedString.Key.font: UIFont(name: "Copperplate", size: 20) ?? UIFont.systemFont(ofSize: 20),
-            NSAttributedString.Key.foregroundColor : UIColor.marvelGrey]
+            NSAttributedString.Key.foregroundColor : UIColor.marvelGray]
         window?.rootViewController = navigationController
         return true
     }

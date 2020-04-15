@@ -49,14 +49,7 @@ class MarvelListViewController: UIViewController, NibLoadable {
             tableView.register(loadMore, forCellReuseIdentifier: LoadMoreCell.reuseId)
         }
     }
-    
-    @IBOutlet weak var errorContainer: UIView!{
-        didSet{
-            errorContainer.isHidden = true
-        }
-    }
-    
-    
+
     //MARK: Lifecycle methods
     override func viewDidLoad() {
         super.viewDidLoad()

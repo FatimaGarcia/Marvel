@@ -26,7 +26,7 @@ class ErrorView: UIView {
         self.backgroundColor = .clear
         
         let backgroundView = UIView(frame: self.frame)
-        backgroundView.backgroundColor = UIColor.marvelGrey
+        backgroundView.backgroundColor = UIColor.marvelGray
         self.addSubview(backgroundView)
         
         image.frame = CGRect(x: (self.frame.width/2) - 50, y: (self.frame.height/2) - 200, width: 100, height: 100)

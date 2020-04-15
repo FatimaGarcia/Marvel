@@ -9,12 +9,25 @@
 import UIKit
 
 extension UIColor {
-    public static var marvelGrey: UIColor {
-        return UIColor(red: 209.0/255.0, green: 218.0/255.0, blue: 232.0/255.0, alpha: 1.0)
+    public static var marvelGray: UIColor {
+      if let color = UIColor(named: "marvelGray") {
+          return color
+      }
+      fatalError("Could not find appBG color")
+    }
+    
+    public static var marvelBackRed: UIColor {
+      if let color = UIColor(named: "marvelBackRed") {
+          return color
+      }
+      fatalError("Could not find appBG color")
     }
     
     public static var marvelRed: UIColor {
-        return UIColor(red: 171.0/255.0, green: 42.0/255.0, blue: 58.0/255.0, alpha: 1.0)
+      if let color = UIColor(named: "marvelRed") {
+          return color
+      }
+      fatalError("Could not find appBG color")
     }
     
     public static var transparentWhite: UIColor {

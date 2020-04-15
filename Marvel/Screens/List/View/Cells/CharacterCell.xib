@@ -1,8 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="16096" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="15705" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16086"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15706"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -52,14 +53,14 @@
                             </view>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="chevron.right" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="FoN-Jw-pd9">
                                 <rect key="frame" x="272" y="198" width="20" height="16.5"/>
-                                <color key="tintColor" red="0.54901960780000003" green="0.12549019610000001" blue="0.12549019610000001" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="tintColor" name="marvelRed"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="20" id="W1N-dO-Wmc"/>
                                     <constraint firstAttribute="height" constant="20" id="vCu-LD-vtX"/>
                                 </constraints>
                             </imageView>
                         </subviews>
-                        <color key="backgroundColor" red="1" green="0.8784313725490196" blue="0.8784313725490196" alpha="1" colorSpace="calibratedRGB"/>
+                        <color key="backgroundColor" name="marvelBackRed"/>
                         <constraints>
                             <constraint firstAttribute="trailing" secondItem="FoN-Jw-pd9" secondAttribute="trailing" constant="16" id="1Wo-WL-QLz"/>
                             <constraint firstItem="3WH-8s-m8P" firstAttribute="top" secondItem="VTd-Ga-i7T" secondAttribute="top" constant="16" id="6Hh-Rc-LJa"/>
@@ -76,6 +77,7 @@
                         </constraints>
                     </view>
                 </subviews>
+                <color key="backgroundColor" name="marvelGray"/>
                 <constraints>
                     <constraint firstAttribute="trailing" secondItem="VTd-Ga-i7T" secondAttribute="trailing" constant="6" id="EsE-aT-V9x"/>
                     <constraint firstItem="VTd-Ga-i7T" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="6" id="F8t-jl-Nrn"/>
@@ -94,6 +96,15 @@
         </tableViewCell>
     </objects>
     <resources>
-        <image name="chevron.right" catalog="system" width="96" height="128"/>
+        <image name="chevron.right" catalog="system" width="48" height="64"/>
+        <namedColor name="marvelBackRed">
+            <color red="1" green="0.8784313725490196" blue="0.8784313725490196" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="marvelGray">
+            <color red="0.81960784313725488" green="0.85490196078431369" blue="0.90980392156862744" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="marvelRed">
+            <color red="0.5490196078431373" green="0.12549019607843137" blue="0.12549019607843137" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
     </resources>
 </document>

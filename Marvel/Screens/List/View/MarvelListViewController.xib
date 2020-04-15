@@ -1,15 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="16096" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="15705" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16086"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15706"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="MarvelListViewController" customModule="Marvel" customModuleProvider="target">
             <connections>
-                <outlet property="errorContainer" destination="Xyr-CG-p2m" id="vwL-ro-Nnn"/>
                 <outlet property="tableView" destination="1E1-Jp-vxb" id="lLQ-G7-qjX"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>
@@ -21,25 +21,23 @@
             <subviews>
                 <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="1E1-Jp-vxb">
                     <rect key="frame" x="0.0" y="44" width="414" height="852"/>
-                    <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                    <color key="backgroundColor" name="marvelGray"/>
                 </tableView>
-                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Xyr-CG-p2m">
-                    <rect key="frame" x="0.0" y="44" width="414" height="852"/>
-                </view>
             </subviews>
-            <color key="backgroundColor" red="0.81960784310000001" green="0.85490196080000003" blue="0.90980392160000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <color key="backgroundColor" name="marvelGray"/>
             <constraints>
-                <constraint firstAttribute="bottom" secondItem="Xyr-CG-p2m" secondAttribute="bottom" id="4h7-6A-iYT"/>
                 <constraint firstItem="1E1-Jp-vxb" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" id="Af3-Xl-Yp9"/>
-                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="Xyr-CG-p2m" secondAttribute="trailing" id="LXc-Hy-VQl"/>
                 <constraint firstAttribute="bottom" secondItem="1E1-Jp-vxb" secondAttribute="bottom" id="XBp-dy-ygs"/>
                 <constraint firstItem="1E1-Jp-vxb" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="fHn-7p-gA8"/>
-                <constraint firstItem="Xyr-CG-p2m" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" id="m83-m6-Q1R"/>
-                <constraint firstItem="Xyr-CG-p2m" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="o0h-Ou-5Sc"/>
                 <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="1E1-Jp-vxb" secondAttribute="trailing" id="uWi-0d-c86"/>
             </constraints>
             <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
             <point key="canvasLocation" x="139" y="153"/>
         </view>
     </objects>
+    <resources>
+        <namedColor name="marvelGray">
+            <color red="0.81960784313725488" green="0.85490196078431369" blue="0.90980392156862744" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+    </resources>
 </document>

@@ -1,8 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="16096" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="15705" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16086"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15706"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -22,15 +23,16 @@
                             <constraint firstAttribute="height" constant="30" id="D9K-Ey-WJA"/>
                         </constraints>
                         <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="17"/>
-                        <color key="tintColor" red="0.54901960780000003" green="0.12549019610000001" blue="0.12549019610000001" alpha="1" colorSpace="calibratedRGB"/>
+                        <color key="tintColor" name="marvelRed"/>
                         <state key="normal" title="Ver mas" image="memories" catalog="system">
-                            <color key="titleColor" red="0.54901960780000003" green="0.12549019610000001" blue="0.12549019610000001" alpha="1" colorSpace="calibratedRGB"/>
+                            <color key="titleColor" name="marvelRed"/>
                         </state>
                         <connections>
                             <action selector="didTapLoadMore:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="jTL-5J-aC1"/>
                         </connections>
                     </button>
                 </subviews>
+                <color key="backgroundColor" name="marvelGray"/>
                 <constraints>
                     <constraint firstItem="8sq-US-PCF" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="6fs-Dn-PS8"/>
                     <constraint firstItem="8sq-US-PCF" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="7" id="HId-Qf-vcz"/>
@@ -43,6 +45,12 @@
         </tableViewCell>
     </objects>
     <resources>
-        <image name="memories" catalog="system" width="128" height="107"/>
+        <image name="memories" catalog="system" width="64" height="52"/>
+        <namedColor name="marvelGray">
+            <color red="0.81960784313725488" green="0.85490196078431369" blue="0.90980392156862744" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="marvelRed">
+            <color red="0.5490196078431373" green="0.12549019607843137" blue="0.12549019607843137" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
     </resources>
 </document>
