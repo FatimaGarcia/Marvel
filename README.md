@@ -1,10 +1,9 @@
 # Marvel
 Marvel's character list and detail using Marvel API
 
-![Characters' List](https://github.com/FatimaGarcia/Marvel/blob/master/Sample/List.png =10x20)
-![Characters' Search](https://github.com/FatimaGarcia/Marvel/blob/master/Sample/List-search.png =10x20)
-
-![Character's Detail](https://github.com/FatimaGarcia/Marvel/blob/master/Sample/Detail.png =10x20)
+<img src="https://github.com/FatimaGarcia/Marvel/blob/master/Sample/List.png" width="10" height="20">
+<img src="https://github.com/FatimaGarcia/Marvel/blob/master/Sample/List-search.png" width="10" height="20">
+<img src="https://github.com/FatimaGarcia/Marvel/blob/master/Sample/Detail.png" width="10" height="20">
 
 ### Requirements
 - iOS 13.0+
