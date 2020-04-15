@@ -37,7 +37,7 @@ protocol BaseRequest {
 }
 
 extension BaseRequest {
-    var baseUrl: String { return NetworkConstants.endpoint }
+    var baseUrl: String { return NetworkConstants.baseUrl }
     var urlString: String { return baseUrl + path }
 
     var parameters: Parameters {

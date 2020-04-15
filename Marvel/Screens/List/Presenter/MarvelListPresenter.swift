@@ -26,7 +26,7 @@ final class MarvelListPresenter {
     
     //MARK: Properties
     private var offset = 0
-    private let limit = 5
+    private let limit = 100
     private var total: Int = 0{
         didSet {
             showLoadMore = offset < total ? true : false

@@ -9,7 +9,7 @@
 import Foundation
 
 struct NetworkConstants {
-    static let endpoint = "https://gateway.marvel.com"
+    static let baseUrl = "https://gateway.marvel.com"
     static let publicKey = "7517c301035b65aa7ca807da1b874cab"
     //WORKAROUND: Fix hash parameter to not include privateKey from Marvel's API on code
     static let hash = "cc6f78a7afa0a6152c4cccba05c464f9"
