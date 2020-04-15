@@ -29,8 +29,8 @@ struct ListRequest: BaseRequest {
     
     var parameters: Parameters {
         return ["apikey": NetworkConstants.publicKey,
-        "hash" : "cc6f78a7afa0a6152c4cccba05c464f9",
-        "ts": "1586810619.94981",
+        "hash" : NetworkConstants.hash,
+        "ts": NetworkConstants.ts,
         "limit" : "\(limit)",
         "offset" : "\(offset)"]
     }
