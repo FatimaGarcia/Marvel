@@ -30,7 +30,11 @@ extension UIColor {
       fatalError("Could not find marvelRed color")
     }
     
-    public static var transparentWhite: UIColor {
-        return UIColor.white.withAlphaComponent(0.8)
+    
+    public static var marvelLoader: UIColor {
+      if let color = UIColor(named: "marvelLoader") {
+          return color
+      }
+      fatalError("Could not find marvelRed color")
     }
 }

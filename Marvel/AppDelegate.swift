@@ -16,17 +16,6 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         
-        window = UIWindow.init(frame: UIScreen.main.bounds)
-        window?.makeKeyAndVisible()
-        
-        let listVC = assembler.provideList()
-        navigationController = UINavigationController(rootViewController: listVC)
-        UINavigationBar.appearance().barTintColor = UIColor.marvelRed
-        UINavigationBar.appearance().tintColor = UIColor.marvelGray
-        UINavigationBar.appearance().titleTextAttributes = [
-            NSAttributedString.Key.font: UIFont(name: "Copperplate", size: 20) ?? UIFont.systemFont(ofSize: 20),
-            NSAttributedString.Key.foregroundColor : UIColor.marvelGray]
-        window?.rootViewController = navigationController
         return true
     }
     

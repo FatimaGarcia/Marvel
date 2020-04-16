@@ -23,7 +23,7 @@ class LoaderView: UIView {
         self.backgroundColor = .clear
         
         let backgroundView = UIView(frame: self.frame)
-        backgroundView.backgroundColor = UIColor.transparentWhite
+        backgroundView.backgroundColor = UIColor.marvelLoader
         self.addSubview(backgroundView)
         
         let indicator = UIActivityIndicatorView.init(style: UIActivityIndicatorView.Style.large)
